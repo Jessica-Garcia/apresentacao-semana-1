@@ -11,6 +11,7 @@ public class PolimorfismoTesteReferencia {
         Funcionario vendedor = new Vendedor("Yuri", 2600.0, 20000.0);
 
         // A mesma operação em variáveis do mesmo tipo terão comportamentos diferentes conforme os objetos para os quais elas apontam
+
         gerente.calcularPagamento();
         vendedor.calcularPagamento();
 
