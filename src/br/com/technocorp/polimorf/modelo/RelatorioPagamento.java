@@ -18,7 +18,7 @@ public class RelatorioPagamento {
             Gerente gerente = (Gerente) funcionario;
             System.out.println("Participação nos lucros: " + gerente.getPnl());
         }
-        if(funcionario instanceof Vendedor){
+        else if(funcionario instanceof Vendedor){
             Vendedor vendedor = (Vendedor) funcionario;
             System.out.println("Total de vendas: " + vendedor.getTotalVendas());
         }

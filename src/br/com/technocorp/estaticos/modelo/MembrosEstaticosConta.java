@@ -8,7 +8,6 @@ public class MembrosEstaticosConta {
     private double saldo;
     private static int total;
 
-
     public MembrosEstaticosConta() {
 
     }

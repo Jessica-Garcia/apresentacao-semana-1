@@ -8,7 +8,7 @@ public class ClasseC extends ClasseA {
     public void visibilidadeClasseA(){
         ClasseA ca = new ClasseA();
 
-//        ca.numeroDefault = 10; não é visivel
+//       ca.numeroDefault = 10; não é visivel
         super.numeroProtected = 30;
         ca.numeroPublic = 15;
 //        ca.numeroPrivado = 12; // Não é visivel

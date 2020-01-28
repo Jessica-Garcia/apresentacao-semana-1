@@ -18,7 +18,7 @@ public class MembrosEstaticosTeste {
         System.out.println("Conta 1: " + conta1);
         System.out.println("Conta 2: " + conta2);
         System.out.println("Conta 3: " + conta3);
-
+        System.out.println();
         System.out.println("O total de contas é: " + MembrosEstaticosConta.getTotal());
 
     }

@@ -10,7 +10,7 @@ public class PolimorfismoTesteInterface {
         Bonificavel vendedor = new Vendedor("Joan", 9000.0, 20000.0);
 
         System.out.println("Bonificação do gerente: " + gerente.calcularBonus(50000.0));
-        System.out.println("Bonificação do vendedor " + vendedor.calcularBonus(10000.0));
+        System.out.println("Bonificação do vendedor " + vendedor.calcularBonus(50000.0));
 
     }
 }
