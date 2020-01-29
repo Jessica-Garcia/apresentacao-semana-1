@@ -16,8 +16,8 @@ public abstract class Funcionario {
 
     @Override
     public String toString() {
-        return "Nome: " + nome + "\n" +
-                "Salario: " + salario;
+        return nome + "\n" +
+                "Salario: " + String.format("%.2f", salario);
     }
 
     public String getNome() {

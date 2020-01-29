@@ -7,16 +7,22 @@ import br.com.technocorp.polimorf.modelo.Vendedor;
 public class PolimorfismoTesteReferencia {
     public static void main(String[] args) {
 
-        Funcionario gerente = new Gerente("Joan", 9000.0, 2000.0);
+        Funcionario gerente = new Gerente("Joan", 2600.0, 2000.0);
         Funcionario vendedor = new Vendedor("Yuri", 2600.0, 20000.0);
 
-        // A mesma operação em variáveis do mesmo tipo terão comportamentos diferentes conforme os objetos para os quais elas apontam
+        System.out.println("Grente: " + gerente);
+        System.out.println();
+        System.out.println("Vendedor: " + vendedor);
+        System.out.println();
 
+        // A mesma operação em variáveis do mesmo tipo tera comportamento diferente conforme os objetos para os quais elas apontam
         gerente.calcularPagamento();
         vendedor.calcularPagamento();
 
-        System.out.println(gerente);
+        System.out.println("Novo salário após calculo do pagamento:");
         System.out.println();
-        System.out.println(vendedor);
+        System.out.println("Grente: " + gerente);
+        System.out.println();
+        System.out.println("Vendedor: " + vendedor);
     }
 }

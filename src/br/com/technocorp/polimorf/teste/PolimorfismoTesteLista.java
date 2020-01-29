@@ -18,5 +18,10 @@ public class PolimorfismoTesteLista {
             soma += f.getSalario();
         }
         System.out.println("Soma dos salarios dos funcionários: " + soma);
+
+        System.out.println("Nome dos funcionários:");
+        for(Funcionario f : funcionarios){
+            System.out.println(f.getNome());
+        }
     }
 }

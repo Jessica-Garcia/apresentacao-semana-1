@@ -10,17 +10,17 @@ public class RelatorioPagamento {
         System.out.println("Gerando relatório de pagamento");
         funcionario.calcularPagamento();
         System.out.println("Nome: " + funcionario.getNome());
-        System.out.println("Salário desse mês: " + funcionario.getSalario());
+        System.out.printf("Salário desse mês: %.2f%n", funcionario.getSalario());
 
         // para chamar métodos das classes filhas, mesmo usando parâmetros da classe mãe (DownCasting):
 
         if(funcionario instanceof Gerente){
             Gerente gerente = (Gerente) funcionario;
-            System.out.println("Participação nos lucros: " + gerente.getPnl());
+            System.out.printf("Participação nos lucros: %.2f%n", gerente.getPnl());
         }
         else if(funcionario instanceof Vendedor){
             Vendedor vendedor = (Vendedor) funcionario;
-            System.out.println("Total de vendas: " + vendedor.getTotalVendas());
+            System.out.printf("Total de vendas: %.2f%n", vendedor.getTotalVendas());
         }
 
     }
