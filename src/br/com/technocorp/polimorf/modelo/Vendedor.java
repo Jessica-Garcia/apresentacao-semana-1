@@ -9,6 +9,7 @@ public class Vendedor extends Funcionario implements Bonificavel {
         this.totalVendas = totalVendas;
     }
     // método sobrescrito da classe mãe abstrata 2
+
     @Override
     public void calcularPagamento() {
         this.salario += totalVendas * 0.05;
