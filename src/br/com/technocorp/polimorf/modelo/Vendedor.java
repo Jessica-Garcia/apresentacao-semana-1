@@ -11,7 +11,8 @@ public class Vendedor extends Funcionario implements Bonificavel {
     // método sobrescrito da classe mãe abstrata
     @Override
     public void calcularPagamento() {
-        super.salario += totalVendas * 0.05;
+        this.salario += totalVendas * 0.05;
+        // this.setSalario(getSalario() + (totalVendas * 0.5));
     }
     // método sobrescrito da interface
     @Override

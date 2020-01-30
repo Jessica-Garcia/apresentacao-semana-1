@@ -11,7 +11,8 @@ public class Gerente extends Funcionario implements Bonificavel {
 // método sobrescrito da classe mãe abstrata
     @Override
     public void calcularPagamento() {
-        super.salario += pnl;
+        this.salario += pnl;
+        //this.setSalario(getSalario() + pnl);
     }
 // método sobrescrito da interface
     @Override

@@ -9,7 +9,11 @@ public class ClasseB {
         ca.numeroDefault = 10;
         ca.numeroProtected = 30;
         ca.numeroPublic = 15;
-//        ca.numeroPrivado = 12; // Não é visivel
+
+//        ca.numeroPrivado = 12; // Não é visivel se chamado diretamente, somente pode ser acessado através de métodos
+
+        ca.setNumeroPrivate(12);
+        ca.getNumeroPrivate();
 
 
     }

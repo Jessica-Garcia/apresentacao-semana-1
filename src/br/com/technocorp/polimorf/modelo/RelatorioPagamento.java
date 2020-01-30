@@ -1,6 +1,5 @@
 package br.com.technocorp.polimorf.modelo;
 
-import br.com.technocorp.heranca.modelo.Pessoa;
 
 public class RelatorioPagamento {
 
@@ -12,7 +11,8 @@ public class RelatorioPagamento {
         System.out.println("Nome: " + funcionario.getNome());
         System.out.printf("Salário desse mês: %.2f%n", funcionario.getSalario());
 
-        // para chamar métodos das classes filhas, mesmo usando parâmetros da classe mãe (DownCasting):
+        // para chamar métodos das classes filhas, mesmo usando parâmetros da classe mãe
+        // (DownCasting: força a conversão da classe mãe para a classe filha)
 
         if(funcionario instanceof Gerente){
             Gerente gerente = (Gerente) funcionario;
